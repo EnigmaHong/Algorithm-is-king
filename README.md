@@ -31,6 +31,8 @@
 ### 人脸与人体识别
 人脸识别：目前最先进是RetinaFace(检测人脸)+insightface(识别人脸)，这个项目连训练都不用，直接下载就能上线，效果非常好( https://github.com/deepinsight/insightface ) ,口罩，年龄识别都有了  
 人脸关键点及姿态：用RetinaFace检测人脸，用算法分析关键点，关键点拟合角度，https://github.com/WIKI2020/FacePose_pytorch  
+活体检测：https://github.com/minivision-ai/Silent-Face-Anti-Spoofing  
+人体姿态检测： https://github.com/CMU-Perceptual-Computing-Lab/openpose  
 
 ### OCR文字识别
 文字检测模型（用带有画框标记字体的图片训练）+文字识别模型（用刚才的图片，截取字体框，统一缩放到一个尺寸，去训练）+信息筛选算法；这个其实使用非常简单，什么票据类别都可以自己训练，效果十分好，只要你的素材几百张以上，自己动手吧，项目地址( https://github.com/PaddlePaddle/PaddleOCR )
@@ -38,7 +40,7 @@
 ### 换脸，语音合成，唇部匹配语音
 换脸：deepface好出名吧，不多说  
 语音合成：提供一段语音，算法模仿这个语音说话。好容易使用：https://github.com/KuangDD/zhrtvc  
-唇部匹配语音：https://github.com/Rudrabha/Wav2Lip，非常好玩，加上上面的语音项目，就可以完全用算法生成一个名人去说你想说的话
+唇部匹配语音：https://github.com/Rudrabha/Wav2Lip ， 非常好玩，加上上面的语音项目，就可以完全用算法生成一个名人去说你想说的话
 
 ### 美妆美颜
 
