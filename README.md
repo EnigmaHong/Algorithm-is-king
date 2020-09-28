@@ -19,26 +19,26 @@
 
 
 ### 图像技术
-总的来说就是目标检测，目前目标检测有什么呢？主要是下面两个：
-（1）Efficient：https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch  
-（2）YOLOV4：https://github.com/Tianxiaomo/pytorch-YOLOv4  
+总的来说就是目标检测，目前目标检测有什么呢？主要是下面两个:  
+（1）Efficient：https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch    
+（2）YOLOV4：https://github.com/Tianxiaomo/pytorch-YOLOv4    
 
-别告诉我你还在使用SSD！强烈推荐EFFICIENTD4以上网络，效果杠杠的。打标时候不一定全个物体标记，因为有遮挡，可以标计物体前，物体后，只有识别一个就是认为识别到该物体。有了Efficient，你基本可以PK掉一批硕博士。这样，只要有素材，什么动物识别，植物识别，汽车识别，商品识别就都没问题了，去找素材吧！如果你要边缘端使用诸如嵌入式TX2芯片的，就要使用YOLOV3的版本了，这里不展开  
+别告诉我你还在使用SSD！强烈推荐EFFICIENTD4以上网络，效果杠杠的。打标时候不一定全个物体画框标记，因为有遮挡，可以标记物体前，物体后，物体中等，只要识别其中一个就是认为识别到该物体。有了Efficient，你基本可以PK掉一批硕博士。这样，只要有素材，什么动物识别，植物识别，汽车识别，商品识别就都没问题了，去找素材吧！如果你要边缘端使用诸如嵌入式TX2芯片的，就要使用YOLOV3的版本了，这里不展开  
 
 图像分割的用这个：https://github.com/rishizek/tensorflow-deeplab-v3-plus
 
 
 ### 人脸与人体识别
-人脸识别：目前最先进是RetinaFace(检测人脸)+insight(识别人脸)，这个项目连训练都不用，直接下载就能上线，效果非常好( https://github.com/deepinsight/insightface ) ,口罩，年龄识别都有了  
+人脸识别：目前最先进是RetinaFace(检测人脸)+insightface(识别人脸)，这个项目连训练都不用，直接下载就能上线，效果非常好( https://github.com/deepinsight/insightface ) ,口罩，年龄识别都有了  
 人脸关键点及姿态：用RetinaFace检测人脸，用算法分析关键点，关键点拟合角度，https://github.com/WIKI2020/FacePose_pytorch  
 
 ### OCR文字识别
-文字检测模型（用带有标记字体框图片训练）+文字识别模型（用刚才的图片，截取字体框出来训练）+信息筛选模块；这个其实使用非常简单，什么票据类别都可以训练，效果十分好，只要你的素材几百张以上，项目地址( https://github.com/PaddlePaddle/PaddleOCR )
+文字检测模型（用带有画框标记字体的图片训练）+文字识别模型（用刚才的图片，截取字体框，统一缩放到一个尺寸，去训练）+信息筛选算法；这个其实使用非常简单，什么票据类别都可以自己训练，效果十分好，只要你的素材几百张以上，自己动手吧，项目地址( https://github.com/PaddlePaddle/PaddleOCR )
 
 ### 换脸，语音合成，唇部匹配语音
 换脸：deepface好出名吧，不多说  
 语音合成：提供一段语音，算法模仿这个语音说话。好容易使用：https://github.com/KuangDD/zhrtvc  
-唇部匹配语音：https://github.com/Rudrabha/Wav2Lip，非常好玩  
+唇部匹配语音：https://github.com/Rudrabha/Wav2Lip，非常好玩，加上上面的语音项目，就可以完全用算法生成一个名人去说你想说的话
 
 ### 美妆美颜
 
